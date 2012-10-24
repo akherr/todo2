@@ -1,0 +1,522 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:40:08', '2012-06-22 18:40:08', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:40:08', '2012-06-22 18:40:08', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:40:08', '2012-06-22 18:40:08', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:40:08', '2012-06-22 18:40:08', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:40:08', '2012-06-22 18:40:08', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:40:08', '2012-06-22 18:40:08', 298486374)
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:40:08 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["updated_at", Fri, 22 Jun 2012 18:40:08 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:42:58', '2012-06-22 18:42:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:42:58', '2012-06-22 18:42:58', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:42:58', '2012-06-22 18:42:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:42:58', '2012-06-22 18:42:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:42:58', '2012-06-22 18:42:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:42:58', '2012-06-22 18:42:58', 298486374)
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:42:58 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["updated_at", Fri, 22 Jun 2012 18:42:58 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:50:37', '2012-06-22 18:50:37', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:50:37', '2012-06-22 18:50:37', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:50:37', '2012-06-22 18:50:37', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:50:37', '2012-06-22 18:50:37', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:50:37', '2012-06-22 18:50:37', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:50:37', '2012-06-22 18:50:37', 298486374)
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:50:37 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", "King"], ["updated_at", Fri, 22 Jun 2012 18:50:37 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 22 Jun 2012 18:50:37 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 18:50:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:54:39', '2012-06-22 18:54:39', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:54:39', '2012-06-22 18:54:39', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:54:39', '2012-06-22 18:54:39', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:54:39', '2012-06-22 18:54:39', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:54:39', '2012-06-22 18:54:39', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:54:39', '2012-06-22 18:54:39', 298486374)
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:54:39 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", "King"], ["updated_at", Fri, 22 Jun 2012 18:54:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 22 Jun 2012 18:54:39 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", nil], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 18:54:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:54:39 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 18:54:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:55:10', '2012-06-22 18:55:10', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:55:10', '2012-06-22 18:55:10', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:55:10', '2012-06-22 18:55:10', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:55:10', '2012-06-22 18:55:10', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:55:10', '2012-06-22 18:55:10', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:55:10', '2012-06-22 18:55:10', 298486374)
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:55:10 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", "King"], ["updated_at", Fri, 22 Jun 2012 18:55:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 22 Jun 2012 18:55:10 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", nil], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 18:55:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:55:10 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 18:55:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:57:10', '2012-06-22 18:57:10', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:57:10', '2012-06-22 18:57:10', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:57:10', '2012-06-22 18:57:10', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:57:10', '2012-06-22 18:57:10', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:57:10', '2012-06-22 18:57:10', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:57:10', '2012-06-22 18:57:10', 298486374)
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:57:10 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", "King"], ["updated_at", Fri, 22 Jun 2012 18:57:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 22 Jun 2012 18:57:10 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", nil], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 18:57:10 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:57:10 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 18:57:10 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:59:51', '2012-06-22 18:59:51', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 18:59:51', '2012-06-22 18:59:51', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:59:51', '2012-06-22 18:59:51', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 18:59:51', '2012-06-22 18:59:51', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:59:51', '2012-06-22 18:59:51', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 18:59:51', '2012-06-22 18:59:51', 298486374)
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:59:51 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", "King"], ["updated_at", Fri, 22 Jun 2012 18:59:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 22 Jun 2012 18:59:51 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", nil], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 18:59:51 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 18:59:51 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 18:59:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:04:29', '2012-06-22 19:04:29', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:04:29', '2012-06-22 19:04:29', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:04:29', '2012-06-22 19:04:29', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:04:29', '2012-06-22 19:04:29', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:04:29', '2012-06-22 19:04:29', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:04:29', '2012-06-22 19:04:29', 298486374)
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:06:32', '2012-06-22 19:06:32', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:06:32', '2012-06-22 19:06:32', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:06:32', '2012-06-22 19:06:32', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:06:32', '2012-06-22 19:06:32', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:06:32', '2012-06-22 19:06:32', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:06:32', '2012-06-22 19:06:32', 298486374)
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:08:20', '2012-06-22 19:08:20', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:08:20', '2012-06-22 19:08:20', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:08:20', '2012-06-22 19:08:20', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:08:20', '2012-06-22 19:08:20', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:08:20', '2012-06-22 19:08:20', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:08:20', '2012-06-22 19:08:20', 298486374)
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:19:35', '2012-06-22 19:19:35', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:19:35', '2012-06-22 19:19:35', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:19:35', '2012-06-22 19:19:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:19:35', '2012-06-22 19:19:35', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:19:35', '2012-06-22 19:19:35', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:19:35', '2012-06-22 19:19:35', 298486374)
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:20:46', '2012-06-22 19:20:46', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:20:46', '2012-06-22 19:20:46', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:20:46', '2012-06-22 19:20:46', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:20:46', '2012-06-22 19:20:46', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:20:46', '2012-06-22 19:20:46', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:20:46', '2012-06-22 19:20:46', 298486374)
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:21:35', '2012-06-22 19:21:35', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:21:35', '2012-06-22 19:21:35', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:21:35', '2012-06-22 19:21:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:21:35', '2012-06-22 19:21:35', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:21:35', '2012-06-22 19:21:35', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:21:35', '2012-06-22 19:21:35', 298486374)
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:21:37', '2012-06-22 19:21:37', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:21:37', '2012-06-22 19:21:37', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:21:37', '2012-06-22 19:21:37', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:21:37', '2012-06-22 19:21:37', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:21:37', '2012-06-22 19:21:37', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:21:37', '2012-06-22 19:21:37', 298486374)
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mList Load (0.4ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "lists" 
+Processing by ListsController#create as HTML
+  Parameters: {"list"=>{"description"=>"MyText", "name"=>"MyString"}}
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 29ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "lists" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mList Load (0.1ms)[0m  SELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "lists" [0m
+Processing by ListsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "lists" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ListsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mList Load (0.1ms)[0m  SELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ListsController#index as HTML
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ListsController#new as HTML
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mList Load (0.1ms)[0m  SELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by ListsController#update as HTML
+  Parameters: {"list"=>{"description"=>"MyText", "name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"MyString", "first_name"=>"MyString", "last_login"=>"2012-06-22 10:50:31 UTC", "last_name"=>"MyString"}}
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by UsersController#index as HTML
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by UsersController#new as HTML
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"email"=>"MyString", "first_name"=>"MyString", "last_login"=>"2012-06-22 10:50:31 UTC", "last_name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/sessions/new
+Filter chain halted as :require_current_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:22:59', '2012-06-22 19:22:59', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:22:59', '2012-06-22 19:22:59', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:22:59', '2012-06-22 19:22:59', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:22:59', '2012-06-22 19:22:59', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:22:59', '2012-06-22 19:22:59', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:22:59', '2012-06-22 19:22:59', 298486374)
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "lists"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:23:32', '2012-06-22 19:23:32', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "lists" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', '2012-06-22 19:23:32', '2012-06-22 19:23:32', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "tasks"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:23:32', '2012-06-22 19:23:32', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2012-06-22 19:23:32', '2012-06-22 19:23:32', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:23:32', '2012-06-22 19:23:32', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "last_login", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-06-22 10:50:31.000000', '2012-06-22 19:23:32', '2012-06-22 19:23:32', 298486374)
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 19:23:32 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", "King"], ["updated_at", Fri, 22 Jun 2012 19:23:32 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 22 Jun 2012 19:23:32 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", nil], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 19:23:32 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_login", "last_name", "middle_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 22 Jun 2012 19:23:32 UTC +00:00], ["email", nil], ["first_name", "Austin"], ["last_login", nil], ["last_name", "Herr"], ["middle_name", nil], ["updated_at", Fri, 22 Jun 2012 19:23:32 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction

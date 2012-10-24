@@ -1,0 +1,13 @@
+<ul>
+	<% @task.errors.full_messages.each do |message| %>
+		<li><%= message %></li>
+	<% end %>
+</ul>		
+
+<%= form_for @task do |form| %>
+	<b>Name: </b><%= form.text_field :name %>
+	<b>Due At: </b><%= form.text_field :due_at %>
+	<div>Assignment: <%= form.collection_select :user_id, @users, :id, :email, :prompt => true %>
+	<div>List: <%= form.collection_select :list_id, @lists, :id, :name, :prompt => true %>
+	<%= form.submit %>
+<% end %>

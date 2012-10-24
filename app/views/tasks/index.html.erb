@@ -1,0 +1,9 @@
+<h2>Tasks</h2>
+<% @lists.each do |list|%>
+<strong> <%= list.name %> <%= list.tasks.count %></strong>
+<ul>
+	<%= render list.tasks %>
+</ul>
+<% end %>
+<h2>New Task</h2>
+<%= render 'form' %>
